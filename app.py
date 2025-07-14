@@ -57,4 +57,4 @@ if prediction == 0:
 else:
     st.error("🚨 Fraudulent Transaction")
 
-st.markdown(f"**Fraud Probability:** `{prob:.2%}`")
+st.markdown(f"**Fraud Probability:** `{prob:100%}`")
