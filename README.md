@@ -17,6 +17,15 @@ Detect fraudulent credit card transactions using machine learning, featuring an 
   - Show fraud probability and decision
   - Option to display a random fraud case
   - Configurable fraud threshold (moving towards)
+    
+## 📸 App Screenshots
+
+### 🏠 Homepage
+![App Screenshot 1](assets/screenshot1.png)
+
+### 🔍 Prediction Output
+![App Screenshot 2](assets/screenshot2.png)
+
 
 ---
 
