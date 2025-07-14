@@ -4,6 +4,7 @@
 Detect fraudulent credit card transactions using machine learning, featuring an interactive Streamlit web app for demo and exploration.
 
 ---
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://credit-card-fraud-detection-b26st967l6jrmvbzpumbb6.streamlit.app/)
 
 ## 🚀 Features
 
