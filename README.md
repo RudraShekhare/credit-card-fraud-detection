@@ -53,3 +53,95 @@ credit-card-fraud-detection/
    git clone <YOUR_REPO_URL>
    cd credit-card-fraud-detection
    pip install -r requirements.txt
+
+
+   Add dataset
+
+Download creditcard.csv from [Kaggle dataset].
+
+Place it in the data/ folder.
+
+Generate simulated data
+
+bash
+Copy
+Edit
+python scripts/add_fake_fields.py
+Train & save model
+
+bash
+Copy
+Edit
+python src/model_training.py
+Run web app
+
+bash
+Copy
+Edit
+streamlit run app.py
+📈 Usage
+Use the dropdown to select a "user"
+
+Or check “Show me a fraud case” to randomly sample a fraud
+
+The app shows:
+
+Customer details
+
+Fraud probability
+
+Decision (Legit vs Fraud)
+
+⚙️ Future Improvements
+Add SMOTE/ADASYN for class imbalance
+
+Use GridSearchCV or Optuna for hyperparameter tuning
+
+Add cross-validation & evaluation metrics
+
+Track experiments with MLflow / Weights & Biases
+
+Deploy publicly via Streamlit Cloud or Hugging Face Spaces
+
+Improve UI: add charts, threshold slider, download option
+
+📄 License
+This project is open-source under the MIT License.
+See LICENSE for details.
+
+🛠️ Built With
+Python, pandas, scikit-learn, XGBoost
+
+Streamlit for app UI
+
+joblib for model persistence
+
+yaml
+Copy
+Edit
+
+---
+
+## 🗂 2. Create `.gitignore`
+
+pycache/
+*.pkl
+.env
+.ipynb_checkpoints/
+
+yaml
+Copy
+Edit
+
+---
+
+## 🧩 3. `requirements.txt`
+
+```text
+pandas
+scikit-learn
+xgboost
+streamlit
+faker
+joblib
+
