@@ -1,27 +1,55 @@
-## 📊 Credit Card Fraud Detection - Machine Learning Project
+# Credit Card Fraud Detection
 
-This project detects fraudulent credit card transactions using supervised ML techniques like Logistic Regression, Random Forest, and XGBoost.
+🎯 **Objective**  
+Detect fraudulent credit card transactions using machine learning, featuring an interactive Streamlit web app for demo and exploration.
 
-### 🔧 Tech Stack:
-- Python, Jupyter
-- Pandas, NumPy, Scikit-learn
-- Matplotlib, Seaborn
+---
 
-### 🔍 Dataset:
-[Kaggle - Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
+## 🚀 Features
 
-- 284,807 transactions
-- Highly imbalanced (0.17% fraud cases)
-- Features are anonymized (`V1`–`V28`) + `Amount`, `Time`
+- Tabular data from Kaggle (284K transactions; 492 fraud)
+- Models implemented:
+  - **Random Forest** (primary saved model)
+  - Logistic Regression & XGBoost (for experimentation)
+- Imbalanced dataset handling via scaling & model tuning
+- Interactive **Streamlit app** with:
+  - Select a simulated user transaction
+  - Show fraud probability and decision
+  - Option to display a random fraud case
+  - Configurable fraud threshold (moving towards)
 
-### 🧠 Models Trained:
-- Logistic Regression
-- Random Forest
-- XGBoost
+---
 
-### 📈 Metrics:
-- **Recall** is the key metric (we want to catch frauds)
-- ROC AUC Score used for comparison
+## 📁 Repo Structure
 
-### 💻 Project Structure:
-# credit-card-fraud-detection
+credit-card-fraud-detection/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+├── data/
+│ ├── creditcard.csv
+│ └── fraud_data_simulated.csv
+├── models/
+│ ├── fraud_model.pkl
+│ └── scaler.pkl
+├── notebooks/
+│ ├── 01_EDA.ipynb
+│ └── 02_Model_Training.ipynb
+├── scripts/
+│ └── add_fake_fields.py
+├── src/
+│ └── model_training.py
+├── app.py
+
+
+---
+
+## 💻 Setup Instructions
+
+1. **Clone and install dependencies**
+
+   ```bash
+   git clone <YOUR_REPO_URL>
+   cd credit-card-fraud-detection
+   pip install -r requirements.txt
