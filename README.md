@@ -102,5 +102,6 @@ See LICENSE for details.
 --> Python, pandas, scikit-learn, XGBoost
 --> Streamlit for app UI
 --> joblib for model persistence
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://credit-card-fraud-detection-b26st967l6jrmvbzpumbb6.streamlit.app/)
 
 
