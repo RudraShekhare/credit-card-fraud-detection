@@ -74,40 +74,33 @@ streamlit run app.py
 ```
 
 3. **📈 Usage**
-Use the dropdown to select a "user"
+ - Use the dropdown to select a "user"
+ - Or check “Show me a fraud case” to randomly sample a fraud
 
-Or check “Show me a fraud case” to randomly sample a fraud
+  The app shows:
 
-The app shows:
+  --> Customer details
+  --> Fraud probability
+  --> Decision (Legit vs Fraud)
 
-Customer details
-
-Fraud probability
-
-Decision (Legit vs Fraud)
 
 4. **⚙️ Future Improvements**
-Add SMOTE/ADASYN for class imbalance
+- Add SMOTE/ADASYN for class imbalance
+- Use GridSearchCV or Optuna for hyperparameter tuning
+- Add cross-validation & evaluation metrics
+- Track experiments with MLflow / Weights & Biases
+- Deploy publicly via Streamlit Cloud or Hugging Face Spaces
+- Improve UI: add charts, threshold slider, download option
 
-Use GridSearchCV or Optuna for hyperparameter tuning
-
-Add cross-validation & evaluation metrics
-
-Track experiments with MLflow / Weights & Biases
-
-Deploy publicly via Streamlit Cloud or Hugging Face Spaces
-
-Improve UI: add charts, threshold slider, download option
 
 5. **📄 License**
 This project is open-source under the MIT License.
 See LICENSE for details.
 
+
 6. **🛠️ Built With**
-Python, pandas, scikit-learn, XGBoost
-
-Streamlit for app UI
-
-joblib for model persistence
+--> Python, pandas, scikit-learn, XGBoost
+--> Streamlit for app UI
+--> joblib for model persistence
 
 
